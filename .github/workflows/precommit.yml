@@ -26,11 +26,17 @@ jobs:
         java-version: '8'
         distribution: 'temurin'
 
+    - name: Check JVM location name
+      run: ls /usr/lib/jvm/
+
     - name: Set up JDK 8
       uses: actions/setup-java@v4
       with:
         java-version: '8'
         distribution: 'zulu'
+
+    - name: Check JVM location name
+      run: ls /usr/lib/jvm/
 
     - name: Set up JDK 8
       uses: actions/setup-java@v4
@@ -38,11 +44,17 @@ jobs:
         java-version: '8'
         distribution: 'adopt'
 
+    - name: Check JVM location name
+      run: ls /usr/lib/jvm/
+
     - name: Set up JDK 8
       uses: actions/setup-java@v4
       with:
         java-version: '8'
         distribution: 'adopt-openj9'
+
+    - name: Check JVM location name
+      run: ls /usr/lib/jvm/
 
     - name: Set up JDK 8
       uses: actions/setup-java@v4
@@ -50,11 +62,8 @@ jobs:
         java-version: '8'
         distribution: 'liberica'
 
-    - name: Set up JDK 8
-      uses: actions/setup-java@v4
-      with:
-        java-version: '8'
-        distribution: 'microsoft'
+    - name: Check JVM location name
+      run: ls /usr/lib/jvm/
 
     - name: Set up JDK 8
       uses: actions/setup-java@v4
@@ -62,11 +71,17 @@ jobs:
         java-version: '8'
         distribution: 'corretto'
 
+    - name: Check JVM location name
+      run: ls /usr/lib/jvm/
+
     - name: Set up JDK 8
       uses: actions/setup-java@v4
       with:
         java-version: '8'
         distribution: 'semeru'
+
+    - name: Check JVM location name
+      run: ls /usr/lib/jvm/
 
     - name: Set up JDK 8
       uses: actions/setup-java@v4
@@ -74,11 +89,17 @@ jobs:
         java-version: '8'
         distribution: 'oracle'
 
+    - name: Check JVM location name
+      run: ls /usr/lib/jvm/
+
     - name: Set up JDK 8
       uses: actions/setup-java@v4
       with:
         java-version: '8'
         distribution: 'dragonwell'
+
+    - name: Check JVM location name
+      run: ls /usr/lib/jvm/
 
     - name: Set up JDK 8
       uses: actions/setup-java@v4
@@ -86,11 +107,17 @@ jobs:
         java-version: '8'
         distribution: 'sapmachine'
 
+    - name: Check JVM location name
+      run: ls /usr/lib/jvm/
+
     - name: Set up JDK 8
       uses: actions/setup-java@v4
       with:
         java-version: '8'
         distribution: 'graalvm'
+
+    - name: Check JVM location name
+      run: ls /usr/lib/jvm/
 
     - name: Set up JDK 8
       uses: actions/setup-java@v4
