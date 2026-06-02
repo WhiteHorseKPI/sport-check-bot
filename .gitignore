@@ -1,6 +1,9 @@
 __pycache__/
 .venv/
+venv/
 .idea/
+
+bot.env
 
 *.log
 *.yaml
