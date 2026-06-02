@@ -1,0 +1,19 @@
+[Unit]
+Description=Telegram Sports Discipline Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=washer
+WorkingDirectory=/home/washer/sport-check-bot
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=/home/washer/sport-check-bot/bot.env
+ExecStart=/home/washer/sport-check-bot/venv/bin/python src/bot.py
+Restart=on-failure
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
